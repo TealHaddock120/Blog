@@ -32,19 +32,35 @@
     </div>
   </header>
 
-  <main class="container main-grid">
-    <section>
-      <h2 class="section-title">Crear nuevo post</h2>
-      <form class="create-post-form">
-        <input type="text" placeholder="Título del post" required>
-        <input type="url" placeholder="URL de la imagen destacada">
-        <input type="date" placeholder="Fecha de publicación">
-        <textarea rows="4" placeholder="Resumen breve" required></textarea>
-        <textarea rows="8" placeholder="Contenido completo" required></textarea>
-        <button class="btn-primary" type="submit">Publicar</button>
+  <main class="container">
+    <div class="card">
+      <h2 class="card-title">Crear nuevo post</h2>
+      <form class="form-card">
+        <div class="form-group">
+          <label for="post-title">Título del post</label>
+          <input id="post-title" type="text" placeholder="Escribe un título" required>
+        </div>
+        <div class="form-group">
+          <label for="post-image">URL imagen destacada</label>
+          <input id="post-image" type="url" placeholder="https://ejemplo.com/imagen.jpg">
+        </div>
+        <div class="form-group">
+          <label for="post-date">Fecha de publicación</label>
+          <input id="post-date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="post-summary">Resumen breve</label>
+          <textarea id="post-summary" rows="3" placeholder="Un pequeño resumen" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="post-content">Contenido completo</label>
+          <textarea id="post-content" rows="6" placeholder="Escribe aquí el contenido..." required></textarea>
+        </div>
+        <button class="btn-primary btn-block" type="submit">Publicar</button>
       </form>
-    </section>
+    </div>
   </main>
+  
 
   <footer class="site-footer">
     <div class="container footer-links">
