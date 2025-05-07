@@ -1,0 +1,114 @@
+<!-- ========================================================
+ 💻 EDUCACIÓN PARA LA PAZ – SITIO ESTÁTICO
+ ▸ Estructura completa en HTML + CSS (+ vanilla JS) 
+ ▸ Contiene 4 archivos: index.html, post.html, styles.css, script.js
+ ▸ Copia cada bloque en un archivo independiente con el nombre indicado.
+======================================================== -->
+
+<!-- ========================================================
+ 📄 index.html  (Página de inicio)
+======================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educación para la Paz – Inicio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Global Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Educación para la Paz</a></h1>
+
+      <!-- Navigation -->
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categories.html">Categorías</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="create-post.html">Crear Post</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search-->
+      <div class="header-actions">
+        <label class="search-wrapper">
+          <input type="search" placeholder="Buscar…" aria-label="Buscar" />
+          <svg class="icon-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container main-grid">
+    <!-- Recent Posts -->
+    <section>
+      <h2 class="section-title">Entradas recientes</h2>
+
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=60" alt="Ilustración convivencia pacífica" />
+        <div>
+          <time class="post-date" datetime="2024-04-24">24 de abril de 2024</time>
+          <h3><a href="post.html">Fomentando la convivencia pacífica</a></h3>
+          <p class="post-summary">Esta vivencia activa en que la familia convive hacia una cultura de paz…</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=60" alt="Ilustración valores de paz" />
+        <div>
+          <time class="post-date" datetime="2024-04-20">20 de abril de 2024</time>
+          <h3><a href="post.html">Educación en valores de paz</a></h3>
+          <p class="post-summary">Expone algunos elementos de paz en la vida escolar…</p>
+        </div>
+      </article>
+
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1515165562835-1d966f1ca633?auto=format&fit=crop&w=600&q=60" alt="Ilustración resolución de conflictos" />
+        <div>
+          <time class="post-date" datetime="2024-04-15">15 de abril de 2024</time>
+          <h3><a href="post.html">Resolución de conflictos en el aula</a></h3>
+          <p class="post-summary">Analiza problemas comunes y soluciones colaborativas…</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar Events -->
+    <aside class="sidebar">
+      <h2 class="section-title">Eventos próximos</h2>
+      <ul class="events-list">
+        <li>
+          <time datetime="2024-05-05">5 de mayo de 2024</time>
+          <span>Taller de Mediación</span>
+        </li>
+        <li>
+          <time datetime="2024-05-17">17 de mayo de 2024</time>
+          <span>Conferencia sobre Derechos Humanos</span>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-links">
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos de uso</a>
+      <a href="#">Contacto</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!-- ========================================================
+ 📄 post.html  (Página de detalle de post)
+======================================================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fomento de la paz en la educación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header reutilizado -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Educación para la Paz</a></h1>
+      <nav class="main-nav" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categories.html">Categorías</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="create-post.html">Crear Post</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <label class="search-wrapper">
+          <input type="search" placeholder="Buscar…" aria-label="Buscar" />
+          <svg class="icon-search" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post content -->
+  <article class="post-detail container">
+    <img class="post-banner" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80" alt="Banner paloma de la paz" />
+
+    <h2 class="post-title">Fomento de la paz en la educación</h2>
+    <p class="post-meta">Por <strong>Laura Méndez</strong> · 24 de abril de 2024</p>
+
+    <p>Fomento de la paz educación es una práctica compartida para convivir en entornos educativos…</p>
+    <p>La educación promueve un encuentro positivo y comprensivo…</p>
+    <p>En la educación, una nueva educación es…</p>
+
+    <!-- Comments -->
+    <section class="comments">
+      <h3>4 Comentarios</h3>
+
+      <div class="comment">
+        <div class="avatar">C</div>
+        <div class="comment-body">
+          <p class="comment-meta"><strong>Carlos</strong> · Hace 2 horas</p>
+          <p>Elemento de la paz realmente notoria en aplicación…</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">A</div>
+        <div class="comment-body">
+          <p class="comment-meta"><strong>Ana</strong> · Hace 5 horas</p>
+          <p>Claras circunstancias en que educar la paz potencia competencias…</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">J</div>
+        <div class="comment-body">
+          <p class="comment-meta"><strong>Javier</strong> · Hace 6 horas</p>
+          <p>El procesamiento de conflictos es esencial…</p>
+        </div>
+      </div>
+
+      <div class="comment">
+        <div class="avatar">M</div>
+        <div class="comment-body">
+          <p class="comment-meta"><strong>Marta</strong> · Hace 12 horas</p>
+          <p>Mucho contenido interesante sobre comunicación pacífica…</p>
+        </div>
+      </div>
+
+      <!-- New Comment -->
+      <form class="comment-form">
+        <textarea rows="4" placeholder="Escribe tu comentario…" required></textarea>
+        <button class="btn-primary" type="submit">Enviar</button>
+      </form>
+    </section>
+  </article>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-links">
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos de uso</a>
+      <a href="#">Contacto</a>
+    </div>
+  </footer>
+
+</body>
+</html>
