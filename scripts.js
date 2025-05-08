@@ -114,3 +114,33 @@ document.addEventListener('DOMContentLoaded', () => {
     countEl.textContent = `${comments.length} Comentario${comments.length !== 1 ? 's' : ''}`;
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('theme-toggle');
+  const root   = document.documentElement;
+  // 1) Lee preferencia previa o usa media query
+  let theme = localStorage.getItem('theme');
+  if (!theme) {
+    theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      ? 'dark'
+      : 'light';
+  }
+  applyTheme(theme);
+
+  // 2) Cambia al hacer click
+  toggle.addEventListener('click', () => {
+    theme = (theme === 'dark') ? 'light' : 'dark';
+    applyTheme(theme);
+    localStorage.setItem('theme', theme);
+  });
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      root.classList.add('dark-mode');
+      toggle.textContent = '☀️';
+    } else {
+      root.classList.remove('dark-mode');
+      toggle.textContent = '🌙';
+    }
+  }
+});
