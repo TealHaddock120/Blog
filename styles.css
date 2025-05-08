@@ -237,3 +237,99 @@ a { color: inherit; text-decoration: none; }
   font-size: 1rem;
   font-weight: 600;
 }
+
+/* … todas tus variables, resets y estilos previos … */
+
+/* Menú y buscador por defecto en desktop */
+.main-nav {
+  display: block;
+}
+.search-wrapper {
+  display: block;
+}
+
+/* Botón hamburguesa – oculto en desktop */
+.menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* Grid principal */
+.main-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+  grid-template-columns: 1fr; /* móvil por defecto */
+}
+@media (min-width: 768px) {
+  .main-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ========== MEDIA QUERY MÓVIL ========== */
+@media (max-width: 767px) {
+  /* 1) Mostrar botón hamburguesa */
+  .menu-btn {
+    display: block;
+  }
+
+  /* 2) Ocultar nav y buscador iniciales */
+  .main-nav,
+  .search-wrapper {
+    display: none;
+  }
+
+  /* 3) Panel desplegable cuando está abierto */
+  .main-nav.open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--surface);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 50;
+  }
+  .main-nav.open ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+  }
+  .main-nav.open li {
+    border-bottom: 1px solid var(--border);
+  }
+  .main-nav.open a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+  }
+
+  /* 4) Tarjetas de post apiladas */
+  .post-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .post-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.75rem;
+  }
+
+  /* 5) Sidebar baja debajo */
+  .main-grid {
+    display: block;
+  }
+  .sidebar {
+    margin-top: 2rem;
+  }
+
+  /* 6) Padding lateral extra */
+  .container {
+    padding: 0 1rem;
+  }
+}
