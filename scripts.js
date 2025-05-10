@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderComments();
     form.reset();
     authorInput.focus();
-  });
+  }); 
 
   // 5) Función para pintar la lista
   function renderComments() {
